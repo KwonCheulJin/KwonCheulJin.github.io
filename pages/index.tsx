@@ -11,7 +11,7 @@ const Home: NextPage = () => (
     </Head>
 
     <main className={styles.main}>
-      Home Page
+      New Home Page
     </main>
   </div>
 );
