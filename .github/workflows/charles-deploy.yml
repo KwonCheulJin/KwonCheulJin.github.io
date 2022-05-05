@@ -25,4 +25,4 @@ jobs:
           branch: gh-pages
           folder: out
           clean : true
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          token: ${{ secrets.ACCESS_TOKEN }}
