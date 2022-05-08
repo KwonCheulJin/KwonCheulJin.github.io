@@ -1,3 +1,5 @@
+import { css } from '@emotion/react'
+const reset = css`
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -29,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+  background-color: black;
 	line-height: 1;
 }
 ol, ul {
@@ -46,3 +49,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+`;
+
+export default reset;
