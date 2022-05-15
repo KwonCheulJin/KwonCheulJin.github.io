@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import { useState, useLayoutEffect, useRef, useCallback } from 'react';
+import Link from 'next/link';
 import Head from 'next/head';
 import TypeIt from 'typeit-react';
 import styled from '@emotion/styled';
@@ -7,7 +8,7 @@ import { Button } from '@mui/material';
 
 const HomeContainer = styled.div``;
 
-const Main = styled.main`
+export const Main = styled.main`
   min-height: 100vh;
   flex: 1;
   display: flex;
@@ -30,6 +31,9 @@ const Section = styled.section`
     -ms-animation: fadeOut 15s ease-in-out;
     -o-animation: fadeOut 15s ease-in-out;
     animation: fadeOut 15s ease-in-out;
+    a {
+      text-decoration: none;
+    }
   }
   @keyframes fadeOut {
     0% {
@@ -73,9 +77,11 @@ const Home: NextPage = () => {
         />
         <Section>
           <div className="btn-container">
-            <Button size="large" variant="outlined" color="secondary">
-              Welcome
-            </Button>
+            <Link href="/main">
+              <Button size="large" variant="outlined" color="secondary">
+                Welcome
+              </Button>
+            </Link>
           </div>
         </Section>
       </Main>
