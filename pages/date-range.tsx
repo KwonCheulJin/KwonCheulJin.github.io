@@ -247,13 +247,13 @@ function dateRange() {
   const [datePickerStatus, setDatePickerStatus] = useState(false);
 
   const handleSelectDate = (item: RangeKeyDict) => {
-    const { selection } = item;
-    setState([selection]);
-    console.log(
-      '🚀 ~ file: date-range.tsx ~ line 247 ~ handleSelectDate ~ item',
-      item
-    );
-    console.dir(item);
+    setState([
+      {
+        startDate: item.seletion.startDate,
+        endDate: item.seletion.endDate,
+        key: 'selection',
+      },
+    ]);
   };
   return (
     <DateRangeWrapper>
