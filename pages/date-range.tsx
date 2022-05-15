@@ -195,7 +195,10 @@ const defineds = {
 };
 
 const staticRangeHandler = {
-  range: {},
+  range: () => ({
+    startDate: defineds.startOfToday,
+    endDate: defineds.endOfToday,
+  }),
   isSelected(range: { startDate: number | Date; endDate: number | Date }) {
     const definedRange = this.range();
     return (
