@@ -5,7 +5,7 @@ const nextConfig = {
   optimizeFonts: false,
   images: {
     loader: 'imgix',
-    path: '/_next/image',
+    path: '',
     disableStaticImages: true,
   },
 };
