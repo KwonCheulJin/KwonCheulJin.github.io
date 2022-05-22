@@ -3,7 +3,6 @@ import Link from 'next/link';
 import styled from '@emotion/styled';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
-import me from '../../../public/me.png';
 
 const HeaderContainer = styled.header`
   height: 100vh;
@@ -70,7 +69,7 @@ const Header = () => {
         <div className="me">
           <Image
             alt="me"
-            src={me}
+            src="/me.png"
             layout="intrinsic"
             width={250}
             height={300}
