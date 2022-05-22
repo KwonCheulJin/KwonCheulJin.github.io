@@ -4,6 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   optimizeFonts: false,
   images: {
+    loader: 'akamai',
     disableStaticImages: true,
   },
 };
