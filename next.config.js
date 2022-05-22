@@ -4,7 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   optimizeFonts: false,
   images: {
-    loader: 'default',
+    loader: 'imgix',
     path: '/_next/image',
     disableStaticImages: true,
   },
