@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import styled from '@emotion/styled';
-import CTA from './CTA';
-import HeaderSocials from './HeaderSocials';
+import Image from "next/image";
+import Link from "next/link";
+import styled from "@emotion/styled";
+import CTA from "./CTA";
+import HeaderSocials from "./HeaderSocials";
 
 const HeaderContainer = styled.header`
   height: 100vh;

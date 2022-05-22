@@ -7,12 +7,7 @@
     "es2021": true,
     "node": true
   },
-  "extends": [
-    "next/core-web-vitals",
-    "airbnb",
-    "airbnb/hooks",
-    "prettier"
-  ],
+  "extends": ["next/core-web-vitals", "airbnb", "airbnb/hooks", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaFeatures": {
@@ -51,8 +46,12 @@
       "BinaryExpression"
     ], // for in 사용
     "react/jsx-props-no-spreading": ["warn"], // props로 받은 것 바로 props로 넘기기 허용
-    "quotes": [2, "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
-    "@emotion/pkg-renaming": "error",
+    "quotes": [
+      2,
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ],
+    "@emotion/pkg-renaming": "error"
   },
   "settings": {
     "react": {
@@ -62,6 +61,6 @@
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
-    },
+    }
   }
 }

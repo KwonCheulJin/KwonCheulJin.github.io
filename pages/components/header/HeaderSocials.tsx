@@ -1,8 +1,8 @@
-import styled from '@emotion/styled';
-import Link from 'next/link';
-import { BsLinkedin } from 'react-icons/bs';
-import { FaGithub } from 'react-icons/fa';
-import { FiDribbble } from 'react-icons/fi';
+import styled from "@emotion/styled";
+import Link from "next/link";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import { FiDribbble } from "react-icons/fi";
 
 const SocialsContainer = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ const SocialsContainer = styled.div`
   bottom: 3rem;
 
   &::after {
-    content: '';
+    content: "";
     width: 2px;
     height: 2rem;
     background: var(--color-primary);

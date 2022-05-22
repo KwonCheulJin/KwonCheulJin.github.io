@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Main } from './index';
-import { DateRangePicker } from 'react-date-range';
-import 'react-date-range/dist/styles.css'; // main style file
-import 'react-date-range/dist/theme/default.css';
-import { ko } from 'date-fns/locale';
-import { addDays, endOfDay, startOfDay, addMonths, isSameDay } from 'date-fns';
-import styled from '@emotion/styled';
-import { Button } from '@mui/material';
-import GobackBtn from './components/common/GobackBtn';
+import React, { useState } from "react";
+import { Main } from "./index";
+import { DateRangePicker } from "react-date-range";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css";
+import { ko } from "date-fns/locale";
+import { addDays, endOfDay, startOfDay, addMonths, isSameDay } from "date-fns";
+import styled from "@emotion/styled";
+import { Button } from "@mui/material";
+import GobackBtn from "./components/common/GobackBtn";
 
 const DateRangeWrapper = styled(Main)`
   position: relative;
@@ -214,21 +214,21 @@ export function createStaticRanges(ranges: any[]) {
 
 export const defaultStaticRanges = createStaticRanges([
   {
-    label: '오늘',
+    label: "오늘",
     range: () => ({
       startDate: defineds.startOfToday,
       endDate: defineds.endOfToday,
     }),
   },
   {
-    label: '1주',
+    label: "1주",
     range: () => ({
       startDate: defineds.startOfToday,
       endDate: defineds.endOfWeek,
     }),
   },
   {
-    label: '1달',
+    label: "1달",
     range: () => ({
       startDate: defineds.startOfToday,
       endDate: defineds.endOfMonth,
@@ -241,7 +241,7 @@ function dateRange() {
     {
       startDate: new Date(),
       endDate: new Date(),
-      key: 'selection',
+      key: "selection",
     },
   ]);
   const [datePickerStatus, setDatePickerStatus] = useState(false);
