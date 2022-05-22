@@ -1,6 +1,12 @@
-const withImages = require('next-images');
-module.exports = withImages({
-  webpack(config, options) {
-    return config;
+const isProduction = process.env.NODE_ENV === 'production';
+const productionURL = 'https://kwoncheuljin.github.io';
+
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    loader: 'imgix',
+    path: isProduction ? productionURL : '',
   },
-});
+};
+
+module.exports = nextConfig;
