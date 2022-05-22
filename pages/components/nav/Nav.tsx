@@ -1,8 +1,8 @@
-import styled from "@emotion/styled";
-import Link from "next/link";
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
+import styled from '@emotion/styled';
+import Link from 'next/link';
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
+import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
+import { RiServiceLine } from 'react-icons/ri';
 
 const NavContainer = styled.nav`
   background: rgba(0, 0, 0, 0.3);

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import styled from "@emotion/styled";
-import CTA from "./CTA";
-import HeaderSocials from "./HeaderSocials";
+import Image from 'next/image';
+import Link from 'next/link';
+import styled from '@emotion/styled';
+import CTA from './CTA';
+import HeaderSocials from './HeaderSocials';
 
 const HeaderContainer = styled.header`
   height: 100vh;
@@ -67,13 +67,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div className="me">
-          <Image
-            alt="me"
-            src="/me.png"
-            layout="intrinsic"
-            width={250}
-            height={300}
-          />
+          <Image alt="me" src="/me.png" layout="intrinsic" width={250} height={300} />
         </div>
 
         <Link href="#contact">

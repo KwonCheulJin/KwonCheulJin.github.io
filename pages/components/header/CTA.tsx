@@ -1,5 +1,5 @@
-import Link from "next/link";
-import styled from "@emotion/styled";
+import Link from 'next/link';
+import styled from '@emotion/styled';
 
 const CTAContainer = styled.div`
   margin-top: 2.5rem;

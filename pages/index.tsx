@@ -1,9 +1,14 @@
-import type { NextPage } from "next";
-import Link from "next/link";
-import Head from "next/head";
-import TypeIt from "typeit-react";
-import styled from "@emotion/styled";
-import { Button } from "@mui/material";
+/* eslint-disable react/jsx-indent-props */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable indent */
+/* eslint-disable react/jsx-indent */
+/* eslint-disable react/function-component-definition */
+import type { NextPage } from 'next';
+import Link from 'next/link';
+import Head from 'next/head';
+import TypeIt from 'typeit-react';
+import styled from '@emotion/styled';
+import { Button } from '@mui/material';
 
 export const Main = styled.main`
   width: 100%;
@@ -75,7 +80,7 @@ const Home: NextPage = () => (
         }}
         getBeforeInit={(instance) => {
           instance
-            .type("Hello, World?")
+            .type('Hello, World?')
             .pause(1000)
             .delete(7)
             .pause(750)
