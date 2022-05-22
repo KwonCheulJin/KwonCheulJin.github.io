@@ -1,30 +1,28 @@
-import React from 'react';
-import { Main } from '.';
+import type { NextPage } from 'next';
 import styled from '@emotion/styled';
 import Link from 'next/link';
-
-const Nav = styled.nav`
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-  font-size: 18px;
-  font-weight: 700;
-  a {
-    color: #b388ff;
-    text-decoration: none;
-    &:not(:last-child) {
-      padding-right: 20px;
-    }
-  }
-`;
+import Header from './components/header/Header';
+import Nav from './components/nav/Nav';
+import About from './components/about/About';
+import Experience from './components/experience/Experience';
+import Services from './components/services/Services';
+import Portfolio from './components/portfolio/Portfolio';
+import Testimonials from './components/testimonials/Testimonials';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function main() {
   return (
     <>
-      <Nav>
-        <Link href="/date-range">DATE-RANGE</Link>
-      </Nav>
-      <Main>main</Main>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </>
   );
 }

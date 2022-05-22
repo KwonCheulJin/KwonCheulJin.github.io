@@ -1,6 +1,6 @@
-import { useRouter } from 'next/router';
-import React from 'react';
-import Button from '@mui/material/Button';
+import { useRouter } from "next/router";
+import React from "react";
+import Button from "@mui/material/Button";
 
 function GobackBtn() {
   const router = useRouter();

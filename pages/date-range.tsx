@@ -1,13 +1,13 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import { Main } from './index';
-import { DateRangePicker, RangeKeyDict } from 'react-date-range';
+import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css';
 import { ko } from 'date-fns/locale';
 import { addDays, endOfDay, startOfDay, addMonths, isSameDay } from 'date-fns';
 import styled from '@emotion/styled';
-import GobackBtn from '../components/GobackBtn';
-import { Button, CardHeader } from '@mui/material';
+import { Button } from '@mui/material';
+import GobackBtn from './components/common/GobackBtn';
 
 const DateRangeWrapper = styled(Main)`
   position: relative;
@@ -246,14 +246,8 @@ function dateRange() {
   ]);
   const [datePickerStatus, setDatePickerStatus] = useState(false);
 
-  const handleSelectDate = (item: RangeKeyDict) => {
-    setState([
-      {
-        startDate: item.seletion.startDate,
-        endDate: item.seletion.endDate,
-        key: 'selection',
-      },
-    ]);
+  const handleSelectDate = (item: any) => {
+    setState([item.selection]);
   };
   return (
     <DateRangeWrapper>
