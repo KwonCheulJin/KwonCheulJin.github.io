@@ -38,36 +38,36 @@ const NavContainer = styled.nav`
   }
 `;
 
-const Nav = () => {
-  return (
-    <NavContainer>
-      <Link href="#">
-        <a className="active">
-          <AiOutlineHome />
-        </a>
-      </Link>
-      <Link href="#about">
-        <a>
-          <AiOutlineUser />
-        </a>
-      </Link>
-      <Link href="#experience">
-        <a>
-          <BiBook />
-        </a>
-      </Link>
-      <Link href="#services">
-        <a>
-          <RiServiceLine />
-        </a>
-      </Link>
-      <Link href="#contact">
-        <a>
-          <BiMessageSquareDetail />
-        </a>
-      </Link>
+function Nav() {
+	return (
+		<NavContainer>
+			<Link href="#">
+				<a className="active">
+					<AiOutlineHome />
+    </a>
+    </Link>
+			<Link href="#about">
+				<a>
+					<AiOutlineUser />
+    </a>
+    </Link>
+			<Link href="#experience">
+				<a>
+					<BiBook />
+    </a>
+    </Link>
+			<Link href="#services">
+				<a>
+					<RiServiceLine />
+    </a>
+    </Link>
+			<Link href="#contact">
+				<a>
+					<BiMessageSquareDetail />
+    </a>
+    </Link>
     </NavContainer>
-  );
-};
+	);
+}
 
 export default Nav;

@@ -8,14 +8,14 @@ const CTAContainer = styled.div`
   justify-content: center;
 `;
 
-const CTA = () => {
-  return (
-    <CTAContainer className="cta">
-      <Link href="#contact">
-        <a className="btn btn-primary">Let's Talk</a>
-      </Link>
+function CTA() {
+	return (
+		<CTAContainer className="cta">
+			<Link href="#contact">
+				<a className="btn btn-primary">Let's Talk</a>
+    </Link>
     </CTAContainer>
-  );
-};
+	);
+}
 
 export default CTA;

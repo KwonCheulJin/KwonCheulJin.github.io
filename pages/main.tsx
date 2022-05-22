@@ -12,19 +12,19 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
 function main() {
-  return (
+	return (
     <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </>
-  );
+    <Header />
+    <Nav />
+    <About />
+    <Experience />
+    <Services />
+    <Portfolio />
+    <Testimonials />
+    <Contact />
+    <Footer />
+		</>
+	);
 }
 
 export default main;
