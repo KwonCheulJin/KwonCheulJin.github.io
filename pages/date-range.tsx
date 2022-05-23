@@ -1,9 +1,5 @@
-/* eslint-disable react/jsx-indent-props */
-/* eslint-disable react/jsx-indent */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable indent */
 /* eslint-disable import/order */
-/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from 'react';
 import { Main } from './index';
 import { DateRangePicker } from 'react-date-range';
@@ -242,7 +238,7 @@ export const defaultStaticRanges = createStaticRanges([
   },
 ]);
 
-function dateRange() {
+function DateRange() {
   const [state, setState] = useState([
     {
       startDate: new Date(),
@@ -279,4 +275,4 @@ function dateRange() {
   );
 }
 
-export default dateRange;
+export default DateRange;

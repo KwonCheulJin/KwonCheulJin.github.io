@@ -1,8 +1,3 @@
-/* eslint-disable react/jsx-indent-props */
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable indent */
-/* eslint-disable react/jsx-indent */
-/* eslint-disable react/function-component-definition */
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -78,7 +73,7 @@ const Home: NextPage = () => (
           loopDelay: 1000,
           deleteSpeed: 80,
         }}
-        getBeforeInit={(instance) => {
+        getBeforeInit={instance => {
           instance
             .type('Hello, World?')
             .pause(1000)

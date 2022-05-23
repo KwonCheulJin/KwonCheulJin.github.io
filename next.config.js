@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: 'imgix',
-    path: isProduction ? productionURL : '',
+    path: isProduction ? productionURL : 'http://localhost:3000',
   },
 };
 

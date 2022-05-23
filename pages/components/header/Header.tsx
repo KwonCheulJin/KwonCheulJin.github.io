@@ -57,25 +57,25 @@ const HeaderContainer = styled.header`
 `;
 
 function Header() {
-	return (
-		<HeaderContainer>
-			<div className="container header__container">
-				<h5>Hello I'm</h5>
-				<h1>Charles Kwon</h1>
-				<h5 className="text-light">FrontEnd Developer</h5>
-				<CTA />
-				<HeaderSocials />
+  return (
+    <HeaderContainer>
+      <div className="container header__container">
+        <h5>Hello I'm</h5>
+        <h1>Charles Kwon</h1>
+        <h5 className="text-light">FrontEnd Developer</h5>
+        <CTA />
+        <HeaderSocials />
 
-				<div className="me">
-					<Image alt="me" src="/me.png" layout="intrinsic" width={250} height={300} />
-    </div>
+        <div className="me">
+          <Image alt="me" src="/me.png" layout="intrinsic" width={250} height={300} />
+        </div>
 
-				<Link href="#contact">
-					<a className="scroll__down">Scroll Down</a>
-    </Link>
-    </div>
+        <Link href="#contact">
+          <a className="scroll__down">Scroll Down</a>
+        </Link>
+      </div>
     </HeaderContainer>
-	);
+  );
 }
 
 export default Header;

@@ -22,25 +22,25 @@ const SocialsContainer = styled.div`
 `;
 
 function HeaderSocials() {
-	return (
-		<SocialsContainer className="header__socials">
-			<Link href="https://linkedin.com">
-				<a target="_blank">
-					<BsLinkedin />
-    </a>
-    </Link>
-			<Link href="https://github.com">
-				<a target="_blank">
-					<FaGithub />
-    </a>
-    </Link>
-			<Link href="https://dribbble.com">
-				<a target="_blank">
-					<FiDribbble />
-    </a>
-    </Link>
+  return (
+    <SocialsContainer className="header__socials">
+      <Link href="https://linkedin.com">
+        <a target="_blank">
+          <BsLinkedin />
+        </a>
+      </Link>
+      <Link href="https://github.com">
+        <a target="_blank">
+          <FaGithub />
+        </a>
+      </Link>
+      <Link href="https://dribbble.com">
+        <a target="_blank">
+          <FiDribbble />
+        </a>
+      </Link>
     </SocialsContainer>
-	);
+  );
 }
 
 export default HeaderSocials;
