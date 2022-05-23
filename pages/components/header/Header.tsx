@@ -16,11 +16,11 @@ const HeaderContainer = styled.header`
   }
   .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 20rem;
-    height: 25rem;
-    border-radius: 12rem 12rem 0 0;
+    width: 25%;
+    height: 80%;
+    border-radius: 15rem 15rem 0 0;
     position: absolute;
-    left: calc(50% - 10rem);
+    left: 37%;
     margin-top: 4rem;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
@@ -45,6 +45,12 @@ const HeaderContainer = styled.header`
 
   @media screen and (max-width: 1024px) {
     height: 68vh;
+
+    .me {
+      width: 45%;
+      height: 65%;
+      left: 28%;
+    }
   }
 
   /* ===== MEDIA QUERIES(SMALL DEVICES) ===== */
@@ -55,6 +61,12 @@ const HeaderContainer = styled.header`
     .header__socials,
     .scroll__down {
       display: none;
+    }
+
+    .me {
+      width: 75%;
+      height: 65%;
+      left: 13%;
     }
   }
 `;
