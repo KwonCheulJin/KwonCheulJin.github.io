@@ -1,7 +1,5 @@
-/* eslint-disable import/order */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from 'react';
-import { Main } from './index';
 import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css';
@@ -11,7 +9,29 @@ import styled from '@emotion/styled';
 import { Button } from '@mui/material';
 import GobackBtn from './components/common/GobackBtn';
 
-const DateRangeWrapper = styled(Main)`
+const DateRangeWrapper = styled.main`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffc4ff;
+  --ti-cursor-margin-left: 0.1em;
+  --ti-cursor-color: #ffc4ff;
+  --ti-cursor-font-size: 45px;
+  /* ===== MEDIA QUERIES(MEDIUM DEVICES) ===== */
+
+  @media screen and (max-width: 1024px) {
+  }
+
+  /* ===== MEDIA QUERIES(SMALL DEVICES) ===== */
+
+  @media screen and (max-width: 600px) {
+    font-size: 30px;
+  }
   position: relative;
   justify-content: flex-start;
   padding: 50px;
