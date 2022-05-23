@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
 import { RiServiceLine } from 'react-icons/ri';
+import { useState } from 'react';
 
 const NavContainer = styled.nav`
   background: rgba(0, 0, 0, 0.3);
@@ -39,30 +40,43 @@ const NavContainer = styled.nav`
 `;
 
 function Nav() {
+  const [activeNav, setActiveNav] = useState('#');
   return (
     <NavContainer>
       <Link href="#">
-        <a className="active">
+        <a onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
           <AiOutlineHome />
         </a>
       </Link>
       <Link href="#about">
-        <a>
+        <a
+          onClick={() => setActiveNav('#about')}
+          className={activeNav === '#about' ? 'active' : ''}
+        >
           <AiOutlineUser />
         </a>
       </Link>
       <Link href="#experience">
-        <a>
+        <a
+          onClick={() => setActiveNav('#experience')}
+          className={activeNav === '#experience' ? 'active' : ''}
+        >
           <BiBook />
         </a>
       </Link>
       <Link href="#services">
-        <a>
+        <a
+          onClick={() => setActiveNav('#services')}
+          className={activeNav === '#services' ? 'active' : ''}
+        >
           <RiServiceLine />
         </a>
       </Link>
       <Link href="#contact">
-        <a>
+        <a
+          onClick={() => setActiveNav('#contact')}
+          className={activeNav === '#contact' ? 'active' : ''}
+        >
           <BiMessageSquareDetail />
         </a>
       </Link>
