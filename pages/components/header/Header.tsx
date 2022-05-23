@@ -24,8 +24,11 @@ const HeaderContainer = styled.header`
     margin-top: 4rem;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
-    & > span {
-      margin-top: 4rem;
+    & .image {
+      width: 100%;
+      height: 100%;
+      position: relative !important;
+      object-fit: cover; // Optional
     }
   }
 
@@ -67,7 +70,7 @@ function Header() {
         <HeaderSocials />
 
         <div className="me">
-          <Image alt="me" src="/me.png" layout="intrinsic" width={250} height={300} />
+          <Image alt="me" src="/me.png" layout="fill" className="image" />
         </div>
 
         <Link href="#contact">

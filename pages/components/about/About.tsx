@@ -21,12 +21,20 @@ const AboutContainer = styled.section`
     place-items: center;
 
     &-image {
+      width: 100%;
+      height: 100%;
       border-radius: 2rem;
       overflow: hidden;
       transform: rotate(10deg);
       transition: var(--transition);
       &:hover {
         transform: rotate(0);
+      }
+      & .image {
+        width: 100%;
+        height: 100%;
+        position: relative !important;
+        object-fit: cover; // Optional
       }
     }
   }
@@ -119,7 +127,7 @@ function About() {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <Image alt="me" src="/me2.jpg" layout="intrinsic" width={448} height={448} />
+            <Image alt="me" src="/me2.jpg" layout="fill" className="image" />
           </div>
         </div>
 
