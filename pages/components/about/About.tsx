@@ -5,7 +5,6 @@ import { FaAward, FaRegBuilding } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
 
 const AboutContainer = styled.section`
-  padding-top: 3rem;
   .about__container {
     display: grid;
     grid-template-columns: 35% 50%;
@@ -90,9 +89,12 @@ const AboutContainer = styled.section`
       margin: 2rem auto 5rem;
     }
 
-    .about__content p {
-      margin: 1rem 0 1.5rem;
-      color: var(--color-light);
+    .about__content {
+      text-align: center;
+      & p {
+        margin: 1rem 0 1.5rem;
+        color: var(--color-light);
+      }
     }
   }
 
@@ -118,6 +120,27 @@ const AboutContainer = styled.section`
   }
 `;
 
+const cardItems = [
+  {
+    key: '1',
+    icon: <FaAward className="about__icon" />,
+    title: 'Experience',
+    text: '1+ Years Working',
+  },
+  {
+    key: '2',
+    icon: <FaRegBuilding className="about__icon" />,
+    title: 'Workplace',
+    text: 'Opstech',
+  },
+  {
+    key: '3',
+    icon: <VscFolderLibrary className="about__icon" />,
+    title: 'projects',
+    text: '3+ Completed',
+  },
+];
+
 function About() {
   return (
     <AboutContainer id="about">
@@ -133,21 +156,13 @@ function About() {
 
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>1+ Years Working</small>
-            </article>
-            <article className="about__card">
-              <FaRegBuilding className="about__icon" />
-              <h5>Workplace</h5>
-              <small>Opstech</small>
-            </article>
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
-              <h5>projects</h5>
-              <small>3+ Completed</small>
-            </article>
+            {cardItems.map(item => (
+              <article key={item.key} className="about__card">
+                {item.icon}
+                <h5>{item.title}</h5>
+                <small>{item.text}</small>
+              </article>
+            ))}
           </div>
 
           <p>저에게 궁금한게 있으시면 연락주세요!</p>
