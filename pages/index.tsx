@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import Head from 'next/head';
 import TypeIt from 'typeit-react';
 import styled from '@emotion/styled';
 import { Button } from '@mui/material';
+import HeadInfo from '../components/HeadInfo';
 
 export const Main = styled.main`
   width: 100%;
@@ -61,12 +61,7 @@ const CustomBtn = styled(Button)`
 
 const Home: NextPage = () => (
   <>
-    <Head>
-      <title>Charles's Blog</title>
-      <meta name="description" content="Charles's Practice Blog" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
+    <HeadInfo />
     <Main>
       <TypeIt
         options={{
