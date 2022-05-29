@@ -7,7 +7,7 @@ import { ko } from 'date-fns/locale';
 import { addDays, endOfDay, startOfDay, addMonths, isSameDay } from 'date-fns';
 import styled from '@emotion/styled';
 import { Button } from '@mui/material';
-import GobackBtn from './components/common/GobackBtn';
+import GobackBtn from '../components/common/GobackBtn';
 
 const DateRangeWrapper = styled.main`
   width: 100%;
