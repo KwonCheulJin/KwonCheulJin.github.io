@@ -87,18 +87,6 @@ function Contact() {
   const sendEmail = (e: any) => {
     e.preventDefault();
     e.target.reset();
-    console.log(
-      '🚀 ~ file: Contact.tsx ~ line 94 ~ sendEmail ~ process.env.NEXT_PUBLIC_TEMPLATE_ID',
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
-    );
-    console.log(
-      '🚀 ~ file: Contact.tsx ~ line 92 ~ sendEmail ~ process.env.NEXT_PUBLIC_SERVICE_ID',
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-    );
-    console.log(
-      '🚀 ~ file: Contact.tsx ~ line 97 ~ sendEmail ~ process.env.NEXT_PUBLIC_KEY',
-      process.env.NEXT_PUBLIC_KEY,
-    );
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID,
