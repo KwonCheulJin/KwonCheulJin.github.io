@@ -33,8 +33,8 @@ const NavContainer = styled.nav`
     }
 
     &.active {
-      background: var(--color-bg-top);
-      color: var(--color-white);
+      background: var(--color-primary);
+      color: var(--color-bg-top);
     }
   }
 `;
