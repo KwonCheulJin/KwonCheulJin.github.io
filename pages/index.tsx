@@ -1,12 +1,13 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import { Suspense, useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
 import TypeIt from 'typeit-react';
 import styled from '@emotion/styled';
 import { Button } from '@mui/material';
 import HeadInfo from '../components/HeadInfo';
+import Model from '../lib/Arale'
 
 export const Main = styled.main`
   width: 100%;
@@ -62,30 +63,12 @@ const CustomBtn = styled(Button)`
   }
 `;
 
-function Model({ ...props }) {
-  const group = useRef(null)
-  useFrame( ({clock}) => {
-    const refGroup = group.current;
-    if (refGroup) {
-      return;
-    }
-    refGroup.rotation.y = clock.getElapsedTime()
-  })
-  const { nodes, materials } = useGLTF('/arale.glb')
-  return (
-    <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.평면.geometry} material={materials.매테리얼} position={[-0.68, -0.01, -3.29]} scale={[0, 1, 1]} />
-      <mesh geometry={nodes.arale.geometry} material={materials['palette.002']} rotation={[Math.PI / 2, 0, 0]} />
-    </group>
-  )
-}
-
 const Home: NextPage = () => (
   <>
     <HeadInfo />
     <Main>
       <div style={{ width: "50vw", height: "50vh" }}>
-        <Canvas camera={{ fov:95, psition: [0, 0, 100]}}>
+        <Canvas camera={{ fov:95, position: [1, 4, 5]}}>
           <Suspense fallback={null}>
             <ambientLight />
             <directionalLight intensity={2} position={[0, 0,50]}/>

@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import Link from 'next/link';
 import { MdOutlineEmail } from 'react-icons/md';
 import { AiOutlineGithub } from 'react-icons/ai';
-import { RiKakaoTalkFill } from 'react-icons/ri';
 
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
