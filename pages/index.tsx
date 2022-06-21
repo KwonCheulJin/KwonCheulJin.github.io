@@ -63,11 +63,13 @@ const CustomBtn = styled(Button)`
 `;
 
 function Model({ ...props }) {
-  const group = useRef()
+  const group = useRef(null)
   useFrame( ({clock}) => {
-    if (group.current) {
-      group.current.rotation.y = clock.getElapsedTime()
+    const refGroup = group.current;
+    if (refGroup) {
+      return;
     }
+    refGroup.rotation.y = clock.getElapsedTime()
   })
   const { nodes, materials } = useGLTF('/arale.glb')
   return (
