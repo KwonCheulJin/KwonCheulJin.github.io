@@ -82,7 +82,7 @@ const ContactContainer = styled.section`
 `;
 
 function Contact() {
-  const form = useRef();
+  const form = useRef(null);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
